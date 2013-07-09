@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'apt'
+cookbook 'build-essential'
+cookbook 'git'
+cookbook 'rvm', 
+  :git => 'git://github.com/fnichol/chef-rvm.git'
+cookbook 'php'
+cookbook 'php-fpm',
+  :git => 'git://github.com/Agiley/chef-php-fpm.git'
+cookbook 'nginx'
+cookbook 'mysql'
+cookbook 'drush',
+  :git => 'git://github.com/msonnabaum/chef-drush.git'
+
+cookbook 'chef-solo-search',
+  :git => 'git://github.com/edelight/chef-solo-search.git'
+
+cookbook "users", "= 1.1.2"
+
+cookbook 'fail2ban'
+cookbook 'openssh'
+cookbook 'sudo'
+cookbook 'firewall'

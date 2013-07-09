@@ -1,0 +1,9 @@
+{
+  "id": "deploy",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDjtER5zXCg47j/9ARAaeOq91/lx4FuWRzRMahr3BTGBpE9N/LQahlKKBhK/fahnAQt2lBRyKm5ryB91hIqLt8VrM22Stdw9rstkvhPt102xJGdOQAZwfcPkXFSnZyHK8phzlAh47WVvzI8qZWMzjos5e2U4/kQLTLkaMqSDUESZ/oRtji4l95LZBTlitdLSTMrE8S389WvTM2yUqd38SXuRjNh4JhgPi1nxX9xsHhDk/ij5B+c0/9x26MQrF4HCMwpT+/o6wdHTWPD7APBHeDFMSViL5MR/JRiDbC1E62N7Q8aN5zcgcskj9CotSM1p0ZWWKWQ9GngfqN4SnV/IVCr raed.atoui@gmail.com"
+    ],
+  "groups": ["sudo", "sysadmin", "rvm"],
+  "shell": "\/bin\/bash",
+  "comment": "user for deploying"
+}

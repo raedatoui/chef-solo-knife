@@ -1,0 +1,90 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    apt (1.9.2)
+    build-essential (1.4.0)
+    chef_gem (0.1.0)
+    chef_handler (1.1.4)
+    dmg (1.1.0)
+    fail2ban (1.2.0)
+      yum (>= 0.0.0)
+    firewall (0.10.2)
+    git (2.5.0)
+      build-essential (>= 0.0.0)
+      dmg (>= 0.0.0)
+      runit (>= 1.0)
+      windows (>= 0.0.0)
+      yum (>= 0.0.0)
+    mysql (3.0.0)
+      build-essential (>= 0.0.0)
+      openssl (>= 0.0.0)
+    nginx (1.4.0)
+      apt (>= 0.0.0)
+      build-essential (>= 0.0.0)
+      ohai (>= 1.1.4)
+      yum (>= 0.0.0)
+    ohai (1.1.8)
+    openssh (1.1.4)
+    openssl (1.0.2)
+    php (1.1.8)
+      build-essential (>= 0.0.0)
+      mysql (>= 0.0.0)
+      xml (>= 0.0.0)
+    runit (1.1.4)
+      build-essential (>= 0.0.0)
+      yum (>= 0.0.0)
+    sudo (2.1.0)
+    users (1.1.2)
+    windows (1.8.10)
+      chef_handler (>= 0.0.0)
+    xml (1.1.2)
+      build-essential (>= 0.0.0)
+    yum (2.2.0)
+
+GIT
+  remote: git://github.com/Agiley/chef-php-fpm.git
+  ref: master
+  sha: db7cedde07375893e125384c559502c4b06eb990
+  specs:
+    php-fpm (0.1.0)
+
+GIT
+  remote: git://github.com/edelight/chef-solo-search.git
+  ref: master
+  sha: 1f79c1d86e85aa3a2b01e15f90755cf60eb66a4f
+  specs:
+    chef-solo-search (0.4.0)
+
+GIT
+  remote: git://github.com/fnichol/chef-rvm.git
+  ref: master
+  sha: 7038fb8c518d0d7785767de215b1ae463f237973
+  specs:
+    rvm (0.9.1)
+      chef_gem (>= 0.0.0)
+
+GIT
+  remote: git://github.com/msonnabaum/chef-drush.git
+  ref: master
+  sha: 507f1787629103e06a5bd8546c4ce60be8d98ff5
+  specs:
+    drush (0.10.0)
+      php (>= 0.0.0)
+
+DEPENDENCIES
+  apt (>= 0)
+  build-essential (>= 0)
+  chef-solo-search (>= 0)
+  drush (>= 0)
+  fail2ban (>= 0)
+  firewall (>= 0)
+  git (>= 0)
+  mysql (>= 0)
+  nginx (>= 0)
+  openssh (>= 0)
+  php (>= 0)
+  php-fpm (>= 0)
+  rvm (>= 0)
+  sudo (>= 0)
+  users (= 1.1.2)
+

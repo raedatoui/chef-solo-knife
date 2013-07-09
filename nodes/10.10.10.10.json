@@ -1,0 +1,57 @@
+{
+  "custom": {
+    "hostname": "raed" //insert perfered hostname here
+  },
+  "nginx": {
+    "init_style": "init",
+    "default_site_enabled": "true",
+    "source": {
+      "modules": ["http_gzip_static_module", "http_ssl_module"]
+    }
+  },
+  "rvm": {
+    "default_ruby": "ruby-2.0.0",
+    "global_gems": [
+      { "name": "bundler" }
+    ]
+  },
+  // insert desired for mysql server
+  "mysql": {
+    "server_root_password": "password",
+    "server_debian_password": "password",
+    "server_repl_password": "password",
+    "remove_anonymous_users": "true",
+    "bind_address": "127.0.0.1"
+  },
+  "openssh": {
+    "server": {
+      "permit_root_login": "no",
+      "password_authentication": "no",
+      "allow_agent_forwarding": "yes"
+    }
+  },
+  "authorization": {
+    "sudo": {
+      "passwordless": "true"
+    }
+  },
+  "run_list": [
+    "recipe[apt]",
+    "recipe[build-essential]",
+    "recipe[git]",
+    "recipe[rvm::system]",
+    "recipe[php]",
+    "recipe[php-fpm]",
+    "recipe[nginx::source]",
+    "recipe[mysql::server]",
+    "recipe[drush]",
+    "recipe[openssh]",
+    "recipe[firewall]",
+    "recipe[chef-solo-search]",
+    "recipe[users::sysadmins]",
+    "recipe[sudo]",
+    "recipe[fail2ban]",
+    "recipe[custom]",
+    "recipe[nodejs]",
+  ]
+}
